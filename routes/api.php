@@ -20,5 +20,7 @@ use Illuminate\Support\Facades\Route;
 //     return $request->user();
 // });
 
+Route::get('product_galleries/details/{id}', [ProductGalleryController::class, 'details']);
+
 Route::apiResource('products', ProductController::class);
 Route::apiResource('product_galleries', ProductGalleryController::class);

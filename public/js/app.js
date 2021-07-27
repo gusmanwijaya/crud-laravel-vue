@@ -2768,156 +2768,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
-
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
 //
 //
 //
@@ -2982,106 +2832,34 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 //
 //
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
-  name: "FotoBarang",
+  name: "FotoBarangDetail",
   data: function data() {
-    var _ref;
-
-    return _ref = {
-      fotoBarangs: [],
-      products: [],
-      isModalEdit: false,
-      loading: false,
-      disabled: false
-    }, _defineProperty(_ref, "isModalEdit", false), _defineProperty(_ref, "form", new Form({
-      products_id: "",
-      is_default: ""
-    })), _defineProperty(_ref, "photo", ""), _ref;
+    return {
+      fotoBarangs: []
+    };
   },
   methods: {
-    readProducts: function readProducts(data) {
-      this.products = data;
-    },
     readProductGalleries: function readProductGalleries(data) {
       this.fotoBarangs = data;
-    },
-    onImageChange: function onImageChange(e) {
-      this.photo = e.target.files[0];
-    },
-    uploadImage: function uploadImage() {
-      var formData = new FormData();
-      formData.set("img", this.photo);
-      axios.post("http://crud-laravel-vue.test/api/product_galleries", formData);
-    },
-    createProductGalleries: function createProductGalleries() {
-      var _this = this;
-
-      this.$Progress.start();
-      this.loading = true;
-      this.disabled = true;
-      var formData = {
-        products_id: this.form.products_id,
-        is_default: this.form.is_default
-      };
-      this.uploadImage();
-      this.form.post("http://crud-laravel-vue.test/api/product_galleries", formData).then(function () {
-        newVue.$emit("refreshPage");
-        $("#modal").modal("hide");
-        Toast.fire({
-          icon: "success",
-          title: "Data has been created!"
-        });
-
-        _this.$Progress.finish();
-
-        _this.loading = false;
-        _this.disabled = false;
-      })["catch"](function () {
-        Toast.fire({
-          icon: "error",
-          title: "Uupss, something wrong!"
-        });
-
-        _this.$Progress.fail();
-
-        _this.loading = false;
-        _this.disabled = false;
-      });
-    },
-    updateProductGalleries: function updateProductGalleries() {},
-    showModalCreate: function showModalCreate() {
-      this.isModalEdit = false;
-      this.form.reset();
-      $("#modal").modal("show");
-    },
-    showModalEdit: function showModalEdit(data) {
-      this.isModalEdit = true;
-      this.form.reset();
-      $("#modal").modal("show");
-      this.form.fill(data);
     }
   },
   mounted: function mounted() {
-    var _this2 = this;
+    var _this = this;
 
     this.$Progress.start();
-    axios.get("http://crud-laravel-vue.test/api/product_galleries").then(function (result) {
-      return _this2.readProductGalleries(result.data.data);
+    axios.get("http://crud-laravel-vue.test/api/product_galleries/details/" + this.$route.params.id).then(function (result) {
+      return _this.readProductGalleries(result.data.data);
     })["catch"](function (err) {
       return console.log(err);
     });
     newVue.$on("refreshPage", function () {
-      axios.get("http://crud-laravel-vue.test/api/product_galleries").then(function (result) {
-        return _this2.readProductGalleries(result.data.data);
+      axios.get("http://crud-laravel-vue.test/api/product_galleries/details/" + _this.$route.params.id).then(function (result) {
+        return _this.readProductGalleries(result.data.data);
       })["catch"](function (err) {
         return console.log(err);
       });
     });
     this.$Progress.finish();
-    axios.get("http://crud-laravel-vue.test/api/products").then(function (result) {
-      return _this2.readProducts(result.data.data);
-    })["catch"](function (err) {
-      return console.log(err);
-    });
   }
 });
 
@@ -3192,7 +2970,7 @@ vue__WEBPACK_IMPORTED_MODULE_10__.default.use((vue_progressbar__WEBPACK_IMPORTED
 // START: Vue Currency Filter
 
 vue__WEBPACK_IMPORTED_MODULE_10__.default.use(vue_currency_filter__WEBPACK_IMPORTED_MODULE_9__.default, {
-  symbol: "Rp.",
+  symbol: "IDR",
   thousandsSeparator: ".",
   fractionCount: 0,
   fractionSeparator: ",",
@@ -43741,7 +43519,7 @@ var render = function() {
                                     staticClass: "btn btn-sm btn-info",
                                     attrs: {
                                       to: {
-                                        name: "",
+                                        name: "FotoBarangDetail",
                                         params: { id: product.id }
                                       }
                                     }
@@ -44758,32 +44536,7 @@ var render = function() {
     _c("div", { staticClass: "row justify-content-center" }, [
       _c("div", { staticClass: "col-12" }, [
         _c("div", { staticClass: "card" }, [
-          _c("div", { staticClass: "card-header" }, [
-            _c("h3", { staticClass: "card-title" }, [_vm._v("Foto Barang")]),
-            _vm._v(" "),
-            _c("div", { staticClass: "card-tools" }, [
-              _c(
-                "button",
-                {
-                  staticClass: "btn btn-sm btn-primary",
-                  attrs: {
-                    type: "button",
-                    "data-toggle": "modal",
-                    "data-target": "#modal"
-                  },
-                  on: {
-                    click: function($event) {
-                      return _vm.showModalCreate()
-                    }
-                  }
-                },
-                [
-                  _c("i", { staticClass: "fas fa-plus" }),
-                  _vm._v(" Add\n                        ")
-                ]
-              )
-            ])
-          ]),
+          _vm._m(0),
           _vm._v(" "),
           _c("div", { staticClass: "card-body" }, [
             _c("div", { staticClass: "form-group" }, [
@@ -44793,42 +44546,25 @@ var render = function() {
                       "table",
                       { staticClass: "table" },
                       [
-                        _vm._m(0),
+                        _vm._m(1),
                         _vm._v(" "),
                         _vm._l(_vm.fotoBarangs, function(fotoBarang) {
                           return _c("tr", { key: fotoBarang.id }, [
-                            _c("td", [_vm._v("#")]),
-                            _vm._v(" "),
-                            _c("td", [_vm._v("#")]),
-                            _vm._v(" "),
-                            _c("td", [_vm._v("#")]),
+                            _c("td", [
+                              _vm._v(_vm._s(fotoBarang.products.name))
+                            ]),
                             _vm._v(" "),
                             _c("td", [
-                              _c(
-                                "button",
-                                {
-                                  staticClass: "btn btn-sm btn-warning",
-                                  attrs: {
-                                    "data-toggle": "modal",
-                                    "data-target": "#modal",
-                                    type: "button"
-                                  },
-                                  on: {
-                                    click: function($event) {
-                                      return _vm.showModalEdit(fotoBarang)
-                                    }
-                                  }
-                                },
-                                [
-                                  _c("i", { staticClass: "fas fa-edit" }),
-                                  _vm._v(
-                                    " Edit\n                                        "
-                                  )
-                                ]
-                              ),
-                              _vm._v(" "),
-                              _vm._m(1, true)
-                            ])
+                              _c("img", {
+                                attrs: {
+                                  src: "img/products/" + fotoBarang.photo,
+                                  alt: "Foto Barang",
+                                  width: "80px"
+                                }
+                              })
+                            ]),
+                            _vm._v(" "),
+                            _c("td", [_vm._v(_vm._s(fotoBarang.is_default))])
                           ])
                         })
                       ],
@@ -44844,272 +44580,20 @@ var render = function() {
           ])
         ])
       ])
-    ]),
-    _vm._v(" "),
-    _c(
-      "div",
-      {
-        staticClass: "modal fade",
-        attrs: {
-          id: "modal",
-          tabindex: "-1",
-          role: "dialog",
-          "aria-labelledby": "modalTitle",
-          "aria-hidden": "true"
-        }
-      },
-      [
-        _c(
-          "div",
-          {
-            staticClass: "modal-dialog modal-dialog-centered",
-            attrs: { role: "document" }
-          },
-          [
-            _c("div", { staticClass: "modal-content" }, [
-              _c("div", { staticClass: "modal-header" }, [
-                _c(
-                  "h5",
-                  { staticClass: "modal-title", attrs: { id: "modalTitle" } },
-                  [
-                    _vm._v(
-                      "\n                        " +
-                        _vm._s(_vm.isModalEdit ? "Edit" : "Add") +
-                        " Data\n                    "
-                    )
-                  ]
-                ),
-                _vm._v(" "),
-                _vm._m(4)
-              ]),
-              _vm._v(" "),
-              _c(
-                "form",
-                {
-                  attrs: { enctype: "multipart/form-data" },
-                  on: {
-                    submit: function($event) {
-                      $event.preventDefault()
-                      _vm.isModalEdit
-                        ? _vm.updateProductGalleries()
-                        : _vm.createProductGalleries()
-                    }
-                  }
-                },
-                [
-                  _c("div", { staticClass: "modal-body" }, [
-                    _c(
-                      "div",
-                      { staticClass: "form-group" },
-                      [
-                        _c(
-                          "select",
-                          {
-                            directives: [
-                              {
-                                name: "model",
-                                rawName: "v-model",
-                                value: _vm.form.products_id,
-                                expression: "form.products_id"
-                              }
-                            ],
-                            staticClass: "form-control select2",
-                            class: {
-                              "is-invalid": _vm.form.errors.products_id
-                            },
-                            attrs: { name: "products_id", id: "products_id" },
-                            on: {
-                              change: function($event) {
-                                var $$selectedVal = Array.prototype.filter
-                                  .call($event.target.options, function(o) {
-                                    return o.selected
-                                  })
-                                  .map(function(o) {
-                                    var val = "_value" in o ? o._value : o.value
-                                    return val
-                                  })
-                                _vm.$set(
-                                  _vm.form,
-                                  "products_id",
-                                  $event.target.multiple
-                                    ? $$selectedVal
-                                    : $$selectedVal[0]
-                                )
-                              }
-                            }
-                          },
-                          [
-                            _c("option", { attrs: { value: "" } }),
-                            _vm._v(" "),
-                            _vm._l(_vm.products, function(product) {
-                              return _c(
-                                "option",
-                                {
-                                  key: product.id,
-                                  domProps: { value: product.id }
-                                },
-                                [_vm._v(_vm._s(product.name))]
-                              )
-                            })
-                          ],
-                          2
-                        ),
-                        _vm._v(" "),
-                        _c("HasError", {
-                          attrs: { form: _vm.form, field: "products_id" }
-                        })
-                      ],
-                      1
-                    ),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "form-group" }, [
-                      _c("input", {
-                        staticClass: "form-control select2",
-                        attrs: {
-                          type: "file",
-                          name: "photo",
-                          id: "photo",
-                          accept: "image/*"
-                        },
-                        on: {
-                          change: function($event) {
-                            return _vm.onImageChange()
-                          }
-                        }
-                      })
-                    ]),
-                    _vm._v(" "),
-                    _c(
-                      "div",
-                      { staticClass: "form-group" },
-                      [
-                        _c("div", { staticClass: "form-check" }, [
-                          _c("input", {
-                            directives: [
-                              {
-                                name: "model",
-                                rawName: "v-model",
-                                value: _vm.form.is_default,
-                                expression: "form.is_default"
-                              }
-                            ],
-                            staticClass: "form-check-input",
-                            class: {
-                              "is-invalid": _vm.form.errors.is_default
-                            },
-                            attrs: {
-                              type: "radio",
-                              name: "is_default",
-                              id: "is_default",
-                              value: "1"
-                            },
-                            domProps: {
-                              checked: _vm._q(_vm.form.is_default, "1")
-                            },
-                            on: {
-                              change: function($event) {
-                                return _vm.$set(_vm.form, "is_default", "1")
-                              }
-                            }
-                          }),
-                          _vm._v(" "),
-                          _c("label", { staticClass: "form-check-label" }, [
-                            _vm._v("Ya")
-                          ])
-                        ]),
-                        _vm._v(" "),
-                        _c("div", { staticClass: "form-check" }, [
-                          _c("input", {
-                            directives: [
-                              {
-                                name: "model",
-                                rawName: "v-model",
-                                value: _vm.form.is_default,
-                                expression: "form.is_default"
-                              }
-                            ],
-                            staticClass: "form-check-input",
-                            class: {
-                              "is-invalid": _vm.form.errors.is_default
-                            },
-                            attrs: {
-                              type: "radio",
-                              name: "is_default",
-                              id: "is_default",
-                              value: "0"
-                            },
-                            domProps: {
-                              checked: _vm._q(_vm.form.is_default, "0")
-                            },
-                            on: {
-                              change: function($event) {
-                                return _vm.$set(_vm.form, "is_default", "0")
-                              }
-                            }
-                          }),
-                          _vm._v(" "),
-                          _c("label", { staticClass: "form-check-label" }, [
-                            _vm._v("Tidak")
-                          ])
-                        ]),
-                        _vm._v(" "),
-                        _c("HasError", {
-                          attrs: { form: _vm.form, field: "is_default" }
-                        })
-                      ],
-                      1
-                    )
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "modal-footer" }, [
-                    _c(
-                      "button",
-                      {
-                        staticClass: "btn btn-secondary",
-                        attrs: { type: "button", "data-dismiss": "modal" }
-                      },
-                      [
-                        _vm._v(
-                          "\n                            Close\n                        "
-                        )
-                      ]
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "button",
-                      {
-                        staticClass: "btn",
-                        class: _vm.isModalEdit ? "btn-warning" : "btn-primary",
-                        attrs: { type: "submit", disabled: _vm.disabled }
-                      },
-                      [
-                        _c("i", {
-                          directives: [
-                            {
-                              name: "show",
-                              rawName: "v-show",
-                              value: _vm.loading,
-                              expression: "loading"
-                            }
-                          ],
-                          staticClass: "fa fa-spinner fa-spin"
-                        }),
-                        _vm._v(
-                          "\n                            Save\n                        "
-                        )
-                      ]
-                    )
-                  ])
-                ]
-              )
-            ])
-          ]
-        )
-      ]
-    )
+    ])
   ])
 }
 var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "card-header" }, [
+      _c("h3", { staticClass: "card-title" }, [_vm._v("Foto Barang")]),
+      _vm._v(" "),
+      _c("div", { staticClass: "card-tools" })
+    ])
+  },
   function() {
     var _vm = this
     var _h = _vm.$createElement
@@ -45119,25 +44603,8 @@ var staticRenderFns = [
       _vm._v(" "),
       _c("th", [_vm._v("Photo")]),
       _vm._v(" "),
-      _c("th", [_vm._v("Default")]),
-      _vm._v(" "),
-      _c("th", [_vm._v("Aksi")])
+      _c("th", [_vm._v("Default")])
     ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c(
-      "button",
-      { staticClass: "btn btn-sm btn-danger", attrs: { type: "button" } },
-      [
-        _c("i", { staticClass: "fas fa-trash-alt" }),
-        _vm._v(
-          "\n                                            Delete\n                                        "
-        )
-      ]
-    )
   },
   function() {
     var _vm = this
@@ -45164,23 +44631,6 @@ var staticRenderFns = [
         )
       ])
     ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c(
-      "button",
-      {
-        staticClass: "close",
-        attrs: {
-          type: "button",
-          "data-dismiss": "modal",
-          "aria-label": "Close"
-        }
-      },
-      [_c("span", { attrs: { "aria-hidden": "true" } }, [_vm._v("×")])]
-    )
   }
 ]
 render._withStripped = true

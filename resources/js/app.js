@@ -55,7 +55,7 @@ Vue.use(VueProgressBar, {
 
 // START: Vue Currency Filter
 Vue.use(VueCurrencyFilter, {
-    symbol: "Rp.",
+    symbol: "IDR",
     thousandsSeparator: ".",
     fractionCount: 0,
     fractionSeparator: ",",

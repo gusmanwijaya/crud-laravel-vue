@@ -42,7 +42,7 @@
                                         <td>
                                             <router-link
                                                 :to="{
-                                                    name: '',
+                                                    name: 'FotoBarangDetail',
                                                     params: { id: product.id }
                                                 }"
                                                 class="btn btn-sm btn-info"

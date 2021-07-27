@@ -143,4 +143,10 @@ class ProductGalleryController extends Controller
 
         return ResponseJson::success($data, 'Data has been deleted.');
     }
+
+    public function details($id)
+    {
+        $data = ProductGallery::with('products')->where('products_id', $id)->get();
+        return ResponseJson::success($data, 'Data has been picked.');
+    }
 }
