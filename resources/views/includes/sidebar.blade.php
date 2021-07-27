@@ -53,12 +53,6 @@
                   <p>Foto Barang</p>
                 </router-link>
               </li>
-              <li class="nav-item">
-                <router-link :to="{name: 'Transaksi'}" class="nav-link">
-                  <i class="fas fa-paper-plane nav-icon"></i>
-                  <p>Transaksi</p>
-                </router-link>
-              </li>
             </ul>
           </li>
           <li class="nav-item">

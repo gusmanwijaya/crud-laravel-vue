@@ -10,7 +10,6 @@ import Barang from "./components/Barang.vue";
 import Dashboard from "./components/Dashboard.vue";
 import FotoBarang from "./components/FotoBarang.vue";
 import FotoBarangDetail from "./components/FotoBarangDetail.vue";
-import Transaksi from "./components/Transaksi.vue";
 import Swal from "sweetalert2";
 import VueProgressBar from "vue-progressbar";
 import VueCurrencyFilter from "vue-currency-filter";
@@ -89,11 +88,6 @@ const routes = [
         name: "FotoBarangDetail",
         component: FotoBarangDetail,
         props: true
-    },
-    {
-        path: "/transaksi",
-        name: "Transaksi",
-        component: Transaksi
     }
 ];
 

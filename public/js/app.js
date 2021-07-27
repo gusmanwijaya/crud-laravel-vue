@@ -2865,38 +2865,6 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/Transaksi.vue?vue&type=script&lang=js&":
-/*!****************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/Transaksi.vue?vue&type=script&lang=js& ***!
-  \****************************************************************************************************************************************************************************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
-  name: "Transaksi",
-  mounted: function mounted() {}
-});
-
-/***/ }),
-
 /***/ "./resources/js/app.js":
 /*!*****************************!*\
   !*** ./resources/js/app.js ***!
@@ -2907,18 +2875,17 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var vform__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vform */ "./node_modules/vform/dist/vform.es.js");
 /* harmony import */ var vform_src_components_bootstrap5__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! vform/src/components/bootstrap5 */ "./node_modules/vform/src/components/bootstrap5/index.js");
-/* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm.js");
-/* harmony import */ var vue_router__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! vue-router */ "./node_modules/vue-router/dist/vue-router.esm.js");
+/* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm.js");
+/* harmony import */ var vue_router__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! vue-router */ "./node_modules/vue-router/dist/vue-router.esm.js");
 /* harmony import */ var _components_Barang_vue__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./components/Barang.vue */ "./resources/js/components/Barang.vue");
 /* harmony import */ var _components_Dashboard_vue__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./components/Dashboard.vue */ "./resources/js/components/Dashboard.vue");
 /* harmony import */ var _components_FotoBarang_vue__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./components/FotoBarang.vue */ "./resources/js/components/FotoBarang.vue");
 /* harmony import */ var _components_FotoBarangDetail_vue__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./components/FotoBarangDetail.vue */ "./resources/js/components/FotoBarangDetail.vue");
-/* harmony import */ var _components_Transaksi_vue__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./components/Transaksi.vue */ "./resources/js/components/Transaksi.vue");
-/* harmony import */ var sweetalert2__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! sweetalert2 */ "./node_modules/sweetalert2/dist/sweetalert2.all.js");
-/* harmony import */ var sweetalert2__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(sweetalert2__WEBPACK_IMPORTED_MODULE_7__);
-/* harmony import */ var vue_progressbar__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! vue-progressbar */ "./node_modules/vue-progressbar/dist/vue-progressbar.js");
-/* harmony import */ var vue_progressbar__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(vue_progressbar__WEBPACK_IMPORTED_MODULE_8__);
-/* harmony import */ var vue_currency_filter__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! vue-currency-filter */ "./node_modules/vue-currency-filter/dist/vue-currency-filter.module.js");
+/* harmony import */ var sweetalert2__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! sweetalert2 */ "./node_modules/sweetalert2/dist/sweetalert2.all.js");
+/* harmony import */ var sweetalert2__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(sweetalert2__WEBPACK_IMPORTED_MODULE_6__);
+/* harmony import */ var vue_progressbar__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! vue-progressbar */ "./node_modules/vue-progressbar/dist/vue-progressbar.js");
+/* harmony import */ var vue_progressbar__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(vue_progressbar__WEBPACK_IMPORTED_MODULE_7__);
+/* harmony import */ var vue_currency_filter__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! vue-currency-filter */ "./node_modules/vue-currency-filter/dist/vue-currency-filter.module.js");
 __webpack_require__(/*! ./bootstrap */ "./resources/js/bootstrap.js");
 
 window.Vue = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm.js").default;
@@ -2932,20 +2899,19 @@ window.Vue = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm.js"
 
 
 
-
  // START: Form input Axios vfrom
 
 window.Form = vform__WEBPACK_IMPORTED_MODULE_0__.default;
-vue__WEBPACK_IMPORTED_MODULE_10__.default.component(vform_src_components_bootstrap5__WEBPACK_IMPORTED_MODULE_1__.HasError.name, vform_src_components_bootstrap5__WEBPACK_IMPORTED_MODULE_1__.HasError);
-vue__WEBPACK_IMPORTED_MODULE_10__.default.component(vform_src_components_bootstrap5__WEBPACK_IMPORTED_MODULE_1__.AlertError.name, vform_src_components_bootstrap5__WEBPACK_IMPORTED_MODULE_1__.AlertError); // END: Form input Axios vfrom
+vue__WEBPACK_IMPORTED_MODULE_9__.default.component(vform_src_components_bootstrap5__WEBPACK_IMPORTED_MODULE_1__.HasError.name, vform_src_components_bootstrap5__WEBPACK_IMPORTED_MODULE_1__.HasError);
+vue__WEBPACK_IMPORTED_MODULE_9__.default.component(vform_src_components_bootstrap5__WEBPACK_IMPORTED_MODULE_1__.AlertError.name, vform_src_components_bootstrap5__WEBPACK_IMPORTED_MODULE_1__.AlertError); // END: Form input Axios vfrom
 // START: Load data tanpa refresh page
 
-var newVue = new vue__WEBPACK_IMPORTED_MODULE_10__.default();
+var newVue = new vue__WEBPACK_IMPORTED_MODULE_9__.default();
 window.newVue = newVue; // END: Load data tanpa refresh page
 // START: Sweetalert2
 
-window.Swal = (sweetalert2__WEBPACK_IMPORTED_MODULE_7___default());
-var Toast = sweetalert2__WEBPACK_IMPORTED_MODULE_7___default().mixin({
+window.Swal = (sweetalert2__WEBPACK_IMPORTED_MODULE_6___default());
+var Toast = sweetalert2__WEBPACK_IMPORTED_MODULE_6___default().mixin({
   toast: true,
   position: "top-end",
   showConfirmButton: false,
@@ -2954,7 +2920,7 @@ var Toast = sweetalert2__WEBPACK_IMPORTED_MODULE_7___default().mixin({
 window.Toast = Toast; // END: Sweetalert2
 // START: Vue Progressbar
 
-vue__WEBPACK_IMPORTED_MODULE_10__.default.use((vue_progressbar__WEBPACK_IMPORTED_MODULE_8___default()), {
+vue__WEBPACK_IMPORTED_MODULE_9__.default.use((vue_progressbar__WEBPACK_IMPORTED_MODULE_7___default()), {
   color: "rgb(143, 255, 199)",
   failedColor: "red",
   thickness: "5px",
@@ -2969,7 +2935,7 @@ vue__WEBPACK_IMPORTED_MODULE_10__.default.use((vue_progressbar__WEBPACK_IMPORTED
 }); // END: Vue Progressbar
 // START: Vue Currency Filter
 
-vue__WEBPACK_IMPORTED_MODULE_10__.default.use(vue_currency_filter__WEBPACK_IMPORTED_MODULE_9__.default, {
+vue__WEBPACK_IMPORTED_MODULE_9__.default.use(vue_currency_filter__WEBPACK_IMPORTED_MODULE_8__.default, {
   symbol: "IDR",
   thousandsSeparator: ".",
   fractionCount: 0,
@@ -2980,7 +2946,7 @@ vue__WEBPACK_IMPORTED_MODULE_10__.default.use(vue_currency_filter__WEBPACK_IMPOR
 }); // END: Vue Currency Filter
 // START: Vue Router
 
-vue__WEBPACK_IMPORTED_MODULE_10__.default.use(vue_router__WEBPACK_IMPORTED_MODULE_11__.default);
+vue__WEBPACK_IMPORTED_MODULE_9__.default.use(vue_router__WEBPACK_IMPORTED_MODULE_10__.default);
 var routes = [{
   path: "/",
   name: "Dashboard",
@@ -2998,16 +2964,12 @@ var routes = [{
   name: "FotoBarangDetail",
   component: _components_FotoBarangDetail_vue__WEBPACK_IMPORTED_MODULE_5__.default,
   props: true
-}, {
-  path: "/transaksi",
-  name: "Transaksi",
-  component: _components_Transaksi_vue__WEBPACK_IMPORTED_MODULE_6__.default
 }];
-var router = new vue_router__WEBPACK_IMPORTED_MODULE_11__.default({
+var router = new vue_router__WEBPACK_IMPORTED_MODULE_10__.default({
   routes: routes
 }); // END: Vue Router
 
-var app = new vue__WEBPACK_IMPORTED_MODULE_10__.default({
+var app = new vue__WEBPACK_IMPORTED_MODULE_9__.default({
   el: "#app",
   router: router
 });
@@ -42826,45 +42788,6 @@ component.options.__file = "resources/js/components/FotoBarangDetail.vue"
 
 /***/ }),
 
-/***/ "./resources/js/components/Transaksi.vue":
-/*!***********************************************!*\
-  !*** ./resources/js/components/Transaksi.vue ***!
-  \***********************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony import */ var _Transaksi_vue_vue_type_template_id_2439a666___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Transaksi.vue?vue&type=template&id=2439a666& */ "./resources/js/components/Transaksi.vue?vue&type=template&id=2439a666&");
-/* harmony import */ var _Transaksi_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Transaksi.vue?vue&type=script&lang=js& */ "./resources/js/components/Transaksi.vue?vue&type=script&lang=js&");
-/* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! !../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
-
-
-
-
-
-/* normalize component */
-;
-var component = (0,_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__.default)(
-  _Transaksi_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__.default,
-  _Transaksi_vue_vue_type_template_id_2439a666___WEBPACK_IMPORTED_MODULE_0__.render,
-  _Transaksi_vue_vue_type_template_id_2439a666___WEBPACK_IMPORTED_MODULE_0__.staticRenderFns,
-  false,
-  null,
-  null,
-  null
-  
-)
-
-/* hot reload */
-if (false) { var api; }
-component.options.__file = "resources/js/components/Transaksi.vue"
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (component.exports);
-
-/***/ }),
-
 /***/ "./resources/js/components/Barang.vue?vue&type=script&lang=js&":
 /*!*********************************************************************!*\
   !*** ./resources/js/components/Barang.vue?vue&type=script&lang=js& ***!
@@ -42926,22 +42849,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_0_rules_0_use_0_node_modules_vue_loader_lib_index_js_vue_loader_options_FotoBarangDetail_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!../../../node_modules/vue-loader/lib/index.js??vue-loader-options!./FotoBarangDetail.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/FotoBarangDetail.vue?vue&type=script&lang=js&");
  /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_babel_loader_lib_index_js_clonedRuleSet_5_0_rules_0_use_0_node_modules_vue_loader_lib_index_js_vue_loader_options_FotoBarangDetail_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__.default); 
-
-/***/ }),
-
-/***/ "./resources/js/components/Transaksi.vue?vue&type=script&lang=js&":
-/*!************************************************************************!*\
-  !*** ./resources/js/components/Transaksi.vue?vue&type=script&lang=js& ***!
-  \************************************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony import */ var _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_0_rules_0_use_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Transaksi_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!../../../node_modules/vue-loader/lib/index.js??vue-loader-options!./Transaksi.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/Transaksi.vue?vue&type=script&lang=js&");
- /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_babel_loader_lib_index_js_clonedRuleSet_5_0_rules_0_use_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Transaksi_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__.default); 
 
 /***/ }),
 
@@ -43174,23 +43081,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "staticRenderFns": () => (/* reexport safe */ _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_FotoBarangDetail_vue_vue_type_template_id_5bc02ba7___WEBPACK_IMPORTED_MODULE_0__.staticRenderFns)
 /* harmony export */ });
 /* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_FotoBarangDetail_vue_vue_type_template_id_5bc02ba7___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../node_modules/vue-loader/lib/index.js??vue-loader-options!./FotoBarangDetail.vue?vue&type=template&id=5bc02ba7& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/FotoBarangDetail.vue?vue&type=template&id=5bc02ba7&");
-
-
-/***/ }),
-
-/***/ "./resources/js/components/Transaksi.vue?vue&type=template&id=2439a666&":
-/*!******************************************************************************!*\
-  !*** ./resources/js/components/Transaksi.vue?vue&type=template&id=2439a666& ***!
-  \******************************************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "render": () => (/* reexport safe */ _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Transaksi_vue_vue_type_template_id_2439a666___WEBPACK_IMPORTED_MODULE_0__.render),
-/* harmony export */   "staticRenderFns": () => (/* reexport safe */ _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Transaksi_vue_vue_type_template_id_2439a666___WEBPACK_IMPORTED_MODULE_0__.staticRenderFns)
-/* harmony export */ });
-/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Transaksi_vue_vue_type_template_id_2439a666___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../node_modules/vue-loader/lib/index.js??vue-loader-options!./Transaksi.vue?vue&type=template&id=2439a666& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/Transaksi.vue?vue&type=template&id=2439a666&");
 
 
 /***/ }),
@@ -44629,50 +44519,6 @@ var staticRenderFns = [
         _vm._v(
           "\n                                        404 - Data not found\n                                    "
         )
-      ])
-    ])
-  }
-]
-render._withStripped = true
-
-
-
-/***/ }),
-
-/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/Transaksi.vue?vue&type=template&id=2439a666&":
-/*!*********************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/Transaksi.vue?vue&type=template&id=2439a666& ***!
-  \*********************************************************************************************************************************************************************************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "render": () => (/* binding */ render),
-/* harmony export */   "staticRenderFns": () => (/* binding */ staticRenderFns)
-/* harmony export */ });
-var render = function() {
-  var _vm = this
-  var _h = _vm.$createElement
-  var _c = _vm._self._c || _h
-  return _vm._m(0)
-}
-var staticRenderFns = [
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "container mt-5" }, [
-      _c("div", { staticClass: "row justify-content-center" }, [
-        _c("div", { staticClass: "col-12" }, [
-          _c("div", { staticClass: "card" }, [
-            _c("div", { staticClass: "card-header" }, [_vm._v("Transaksi")]),
-            _vm._v(" "),
-            _c("div", { staticClass: "card-body" }, [
-              _vm._v("I'm an Transaksi.")
-            ])
-          ])
-        ])
       ])
     ])
   }
