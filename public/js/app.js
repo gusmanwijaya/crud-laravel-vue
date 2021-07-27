@@ -2966,7 +2966,8 @@ var routes = [{
   props: true
 }];
 var router = new vue_router__WEBPACK_IMPORTED_MODULE_10__.default({
-  routes: routes
+  routes: routes,
+  linkExactActiveClass: "active"
 }); // END: Vue Router
 
 var app = new vue__WEBPACK_IMPORTED_MODULE_9__.default({

@@ -91,7 +91,10 @@ const routes = [
     }
 ];
 
-const router = new VueRouter({ routes });
+const router = new VueRouter({
+    routes,
+    linkExactActiveClass: "active"
+});
 // END: Vue Router
 
 const app = new Vue({
